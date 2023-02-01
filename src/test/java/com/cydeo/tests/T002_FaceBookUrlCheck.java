@@ -85,6 +85,8 @@ public class T002_FaceBookUrlCheck {
         driver.navigate().back();
         verifyWordContains(currentTitle,"Facebook");
 
+driver.close();//only close the window without killing the driver object
+driver.quit();//killing the driver
     }
 private static void verifyWordContains(String sentence, String word) {
 
